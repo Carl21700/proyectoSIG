@@ -33,7 +33,7 @@ if (!ini_get("auto_detect_line_endings")) {
  $records = $csv->getRecords();      
  
  foreach ($records as $r) {
-    var_dump($r);
+  
     
     $edificio = new Edificio();
     $edificio->descripcion = $r['descripcion'];
@@ -44,5 +44,5 @@ if (!ini_get("auto_detect_line_endings")) {
     $edificio->sigla = $r['sigla'];
     $edificio->save();
   }
-    }
+}
 }
